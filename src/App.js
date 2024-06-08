@@ -1,6 +1,10 @@
 import Body from "./Components/Body";
 function App() {
-  return <Body />;
+  return (
+    
+  <Body/>
+
+  );
 }
 
 export default App;
