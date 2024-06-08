@@ -4,7 +4,8 @@
 
 # Mytube-Gpt Features
  
- - SignIn & SignUp form
+ - SignIn & SignUp
+  -  SignIn & SignUp form
  -  redirecting to..
  - Browse page(only After Authentication)
     - Hader
@@ -13,7 +14,7 @@
       - Movie Title and description
       - play button
       - Movie suggestion 
-       -  List of movies
+      -  List of movies *n
        - vertical Scrolling
 
 
