@@ -15,7 +15,7 @@ const Login = () => {
         <input type='text' placeholder='Email Address' className='p-2 my-2 w-full'/>
         <input type='password' placeholder='Password' className='p-2 my-2 w-full'/>
         <button className='p-2 my-4 bg-red-700 w-full'>Sign In</button>
-        <p>Are you new to MyTube? please SignUp</p>
+        <p>Are you new to MyTube? SignUp Now</p>
 
       </form>
 
