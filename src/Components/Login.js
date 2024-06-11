@@ -8,9 +8,13 @@ const Login = () => {
 
   const email = useRef(null);
   const password = useRef(null);
+  const fullName = useRef(null);
+  const phoneNumber = useRef(null);
 
   const handleButtonClick = () => {
-    const message = checkValidData(email.current.value, password.current.value);
+    if (!isSignInForm? fullName:"");
+    if (!isSignInForm? phoneNumber:"");
+    const message = checkValidData(email.current.value, password.current.value, fullName.current.value, phoneNumber.current.value);
     setErrorMessage(message);
   };
 
@@ -37,6 +41,7 @@ const Login = () => {
         </h1>
         {!isSignInForm && (
           <input
+          ref={fullName}
             type="text"
             placeholder="Full Name"
             className="p-2 my-2 w-full text-black"
@@ -44,6 +49,7 @@ const Login = () => {
         )}
         {!isSignInForm && (
           <input
+          ref={phoneNumber}
             type="tel"
             placeholder="Phone Number"
             className="p-2 my-2 w-full text-black"
@@ -62,7 +68,7 @@ const Login = () => {
           placeholder="Password"
           className="p-2 my-2 w-full text-black"
         />
-        <p className="text-red-500">{errorMessage}</p>
+        <p className="text-red-500 font-bold text-lg py-2">{errorMessage}</p>
         <button
           onClick={handleButtonClick}
           className="p-2 my-4 bg-red-700 w-full"
