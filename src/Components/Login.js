@@ -8,14 +8,10 @@ const Login = () => {
 
   const email = useRef(null);
   const password = useRef(null);
-  // const fullName = useRef(null);
-  // const phoneNumber = useRef(null);
+ 
 
   const handleButtonClick = () => {
-    // if (!isSignInForm? fullName:"name");
-    
-    // if (!isSignInForm? phoneNumber:"9916838182");
-    //fullName.current.value, phoneNumber.current.value
+   
     const message = checkValidData(email.current.value, password.current.value, );
     setErrorMessage(message);
   };
