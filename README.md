@@ -1,5 +1,7 @@
 # cra & tailwind setup
  - react-router-dom setup
+ - form validation
+ - firebase has been configured 
  
 
 # Mytube-Gpt Features
