@@ -2,6 +2,8 @@
  - react-router-dom setup
  - form validation
  - firebase has been configured 
+ - authentification successfull
+ - deploying our app to production
  
 
 # Mytube-Gpt Features
@@ -10,7 +12,7 @@
   -  SignIn & SignUp form
  -  redirecting to..
  - Browse page(only After Authentication)
-    - Hader
+    - Header
      - Main Movie
       - bg trailer
       - Movie Title and description
