@@ -4,6 +4,9 @@
  - firebase has been configured 
  - authentification successfull
  - deploying our app to production
+ - implemented signUp and SignIn API
+ - redux has been config..
+ - created redux store and user slices
  
 
 # Mytube-Gpt Features
