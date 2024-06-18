@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/formValidation";
-import { createUserWithEmailAndPassword , signInWithEmailAndPassword} from "firebase/auth";
+import { createUserWithEmailAndPassword , updateProfile ,signInWithEmailAndPassword} from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 
@@ -10,13 +10,13 @@ const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  const navigate =useNavigate();
-
+  const navigate = useNavigate();
+  const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
 
   const handleButtonClick = () => {
-    const message = checkValidData(email.current.value, password.current.value);
+    const message = checkValidData(name.current.value, email.current.value, password.current.value);
     setErrorMessage(message);
 
     if (message) return;
@@ -24,15 +24,27 @@ const Login = () => {
     if (!isSignInForm) {
       //Sign up logic
       createUserWithEmailAndPassword(
-        auth,
+        auth,        
         email.current.value,
         password.current.value
       )
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
+          updateProfile(user, {
+            displayName: name.current.value,
+            photoURL: "https://avatars.githubusercontent.com/u/49127171?s=48&v=4"
+          }).then(() => {
+            navigate("/browse");
+            
+            // ...
+          }).catch((error) => {
+            setErrorMessage(error.message);
+            // ...
+          });
+
           console.log(user);
-          navigate("/");
+          
           // ...
         })
         .catch((error) => {
@@ -86,20 +98,13 @@ const Login = () => {
         </h1>
         {!isSignInForm && (
           <input
-            // ref={fullName}
+            ref={name}
             type="text"
             placeholder="Full Name"
             className="p-2 my-2 w-full text-black"
           />
         )}
-        {!isSignInForm && (
-          <input
-            // ref={phoneNumber}
-            type="tel"
-            placeholder="Phone Number"
-            className="p-2 my-2 w-full text-black"
-          />
-        )}
+        
 
         <input
           ref={email}
