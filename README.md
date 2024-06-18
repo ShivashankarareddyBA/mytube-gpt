@@ -12,6 +12,8 @@
 - updated the profile witch Name and Photo
 - bugfix :signUp use and display name and pitcture
   bugfix: if the user not logged in it readirecting to browse page
+  Unsubscribed to the onAuthStateChanged callback
+  add hardcoded values to constants file
 
 # Mytube-Gpt Features
 

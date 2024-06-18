@@ -1,0 +1,1 @@
+export const userProfilePhoto = "https://pbs.twimg.com/profile_images/1729909787029078016/dBjB3Fnr_400x400.jpg";
