@@ -13,8 +13,7 @@ const Header = () => {
 
   const handleClick = () => {
     signOut(auth)
-      .then(() => {
-             })
+      .then(() => {})
       .catch((error) => {
         navigate("/error");
       });
@@ -31,11 +30,11 @@ const Header = () => {
             photoURL: photoURL,
           })
         );
-        navigate('/browse');
+        navigate("/browse");
       } else {
         // User is signed out
         dispatch(removeUser());
-        navigate('/');
+        navigate("/");
       }
     });
   }, [dispatch, navigate]);

@@ -1,8 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth  } from "firebase/auth";
-
+import { getAuth } from "firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -16,7 +15,7 @@ const firebaseConfig = {
   storageBucket: "mytube-gpt.appspot.com",
   messagingSenderId: "1013589365515",
   appId: "1:1013589365515:web:9680a5e2973a47d762480e",
-  measurementId: "G-YLZZTJRP8E"
+  measurementId: "G-YLZZTJRP8E",
 };
 
 // Initialize Firebase
