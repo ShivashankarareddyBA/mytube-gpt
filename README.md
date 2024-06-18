@@ -7,6 +7,8 @@
  - implemented signUp and SignIn API
  - redux has been config..
  - created redux store and user slices
+ -impleted mented sign out feature
+ - updated the profile witch Name and Photo
  
 
 # Mytube-Gpt Features
