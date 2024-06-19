@@ -5,7 +5,7 @@ import { API_OPTIONS } from "../utils/constants";
 const Browse = () => {
   const getNowPlayingMovies = async () => {
     const data = await fetch(
-      "https://api.themoviedb.org/3/account/21334528/watchlist/movies?&page=1&sort_by=created_at.asc",
+      'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1',
       API_OPTIONS
     );
     const json = await data.json();
