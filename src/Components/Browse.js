@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Header from "./Header";
 import { API_OPTIONS } from "../utils/constants";
+import MovieTitle from "./MovieTitle";
+import MovieTrailer from "./MovieTrailer";
 
 const Browse = () => {
   const getNowPlayingMovies = async () => {
@@ -19,6 +21,8 @@ const Browse = () => {
   return (
     <div>
       <Header />
+      <MovieTitle/>
+      <MovieTrailer/>
     </div>
   );
 };
