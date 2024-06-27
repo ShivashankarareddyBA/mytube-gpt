@@ -1,13 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const moviesSlice = createSlice({
-  name: "Movie",
+  name: "movie",
   initialState: {
     nowPlayingMovies: null,
   },
   reducers: {
     addNowPlayingMovies: (state, action) => {
-      state.nowPlayingMovies = action.payload;
+      // state.nowPlayingMovies = action.payload;
+      return action.payload;
     },
   },
 });
