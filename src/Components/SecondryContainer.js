@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainContainer = () => {
+const SecondryContainer = () => {
   return (
     <div>
       SecondryContainer
@@ -8,4 +8,4 @@ const MainContainer = () => {
   )
 }
 
-export default MainContainer
+export default SecondryContainer
