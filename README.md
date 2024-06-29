@@ -40,3 +40,12 @@ config..mytube with GPT API
   // if (!isSignInForm? fullName:"name");
   // if (!isSignInForm? phoneNumber:"9916838182");
   //fullName.current.value, phoneNumber.current.value
+---------------------
+browse page structure 
+1 Maicontainer 
+    videoBackground 
+    video title
+
+2ndry container
+   Movies list *n
+     movie card*n
