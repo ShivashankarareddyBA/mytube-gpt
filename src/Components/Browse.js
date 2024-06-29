@@ -7,11 +7,13 @@ const Browse = () => {
   useNowPlayingMovies();
   
 
+
   return (
     <div>
       <Header />
-      <MainContainer />
-      <SecondryContainer />
+      <MainContainer/>
+      <SecondryContainer/>
+
     </div>
   );
 };

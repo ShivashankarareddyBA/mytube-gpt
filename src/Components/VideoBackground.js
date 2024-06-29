@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MovieTitle = () => {
+const VideoBackground = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const MovieTitle = () => {
   )
 }
 
-export default MovieTitle
+export default VideoBackground
