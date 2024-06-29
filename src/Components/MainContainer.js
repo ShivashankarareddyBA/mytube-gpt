@@ -1,15 +1,24 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import VideoBackground from './VideoBackground';
+import VideoTitle from './VideoTitle';
 
 const MainContainer = () => {
 
 const movies = useSelector(store=>store.movies?.nowPlayingMovies);
- if(!movies) return;
-
+ if(!movies) return; //nedd cbz before the store exit it is null if we not put this condition will get error cbz nowplaying movie is null
+ //above is also known as early return
  const mainMovies= movies[0];
- console.log("dd", mainMovies);
+ console.log( mainMovies);
+
+const {original_title, overview} = mainMovies;
+ 
+
   return (
-    <div>
+    <div >
+        <VideoTitle title ={original_title} overview={overview} />
+        <VideoBackground/>
+        
     </div>
   )
 }
