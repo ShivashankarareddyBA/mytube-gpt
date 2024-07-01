@@ -7,7 +7,7 @@ const VideoTitle = ({title, overview}) => {
       <p className='px-12 w-1/3 my-2 text-sm'>{overview}</p>
       <div className=' px-14   '>
         <button className='mx-2  rounded-lg border border-gray-600 bg-white text-black w-28 font-bold bg-opacity-50'> ▶ Play</button>
-        <button className='mx-2 rounded-lg border border-gray-600 bg-gray-500 text-white w-28 font-bold bg-opacity-50'>More Info</button>
+        <button className='mx-2 rounded-lg border border-gray-600 bg-gray-500 text-white w-28 font-bold bg-opacity-50'> More Info</button>
       </div>
 
     </div>
