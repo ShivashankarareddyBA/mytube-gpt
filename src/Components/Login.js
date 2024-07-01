@@ -16,7 +16,6 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
   const dispatch = useDispatch();
 
-  
   const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
@@ -40,8 +39,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL:userProfilePhoto,
-              
+            photoURL: userProfilePhoto,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -53,7 +51,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-            
 
               // ...
             })
@@ -82,8 +79,8 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-         console.log(user);
-          
+          console.log(user);
+
           // ...
         })
         .catch((error) => {
