@@ -50,7 +50,7 @@ const Header = () => {
             src={user?.photoURL}
             alt="UserIcon"
           />
-          <button onClick={handleClick} className="font-bold text-red-800 w-14">
+          <button onClick={handleClick} className="font-bold text-red-800 ">
             SignOut
           </button>
         </div>

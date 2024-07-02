@@ -8,7 +8,7 @@ const MainContainer = () => {
   if (!movies) return; //nedd cbz before the store exit it is null if we not put this condition will get error cbz nowplaying movie is null
   //above is also known as early return
   const mainMovies = movies[0];
-  console.log(mainMovies);
+  // console.log(mainMovies);
 
   const { original_title, overview, id } = mainMovies;
 
