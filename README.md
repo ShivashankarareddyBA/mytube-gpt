@@ -14,6 +14,8 @@
   bugfix: if the user not logged in it readirecting to browse page
   Unsubscribed to the onAuthStateChanged callback
   add hardcoded values to constants file
+  comopleted the mainconatiner and secondry container 
+  fetched popular movies from tmdb
 
 # Mytube-Gpt Features
 
