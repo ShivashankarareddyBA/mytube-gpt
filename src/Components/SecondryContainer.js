@@ -12,7 +12,7 @@ return (
     <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies}/>
     <MovieList title={"Popular"} movies={movies.popularMovies}/>
     <MovieList title={"Top Rated"} movies={movies.topRatedMovies}/>
-    <MovieList title={"Up Comming"} movies={movies.nowPlayingMovies}/>
+    <MovieList title={"Up Comming"} movies={movies.upComingMoives}/>
     <MovieList title={"Horror"} movies={movies.nowPlayingMovies}/>   
     </div>
     </div>
