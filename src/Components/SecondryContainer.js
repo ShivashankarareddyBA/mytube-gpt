@@ -11,7 +11,7 @@ return (
     <div className="-mt-56  relative z-10 ">
     <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies}/>
     <MovieList title={"Popular"} movies={movies.popularMovies}/>
-    <MovieList title={"Top Rated"} movies={movies.nowPlayingMovies}/>
+    <MovieList title={"Top Rated"} movies={movies.topRatedMovies}/>
     <MovieList title={"Up Comming"} movies={movies.nowPlayingMovies}/>
     <MovieList title={"Horror"} movies={movies.nowPlayingMovies}/>   
     </div>
