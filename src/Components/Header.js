@@ -53,7 +53,7 @@ const Header = () => {
         <div className="flex p-2">
           <button
             className="rounded-lg px-2 mt-3 w-24 h-6 mr-4 bg-purple-800 text-white"
-            onclick={handleGptSearchClick}
+            onClick={handleGptSearchClick}
           >
             GPT Search
           </button>

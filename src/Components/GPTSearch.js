@@ -1,9 +1,12 @@
 import React from 'react'
+import GPTSearchBar from './GPTSearchBar'
+import GPTMovieSuggestions from './GPTMovieSuggestions'
 
 const GPTSearch = () => {
   return (
     <div>
-      <h1>search GPt</h1>
+      <GPTSearchBar/>
+      <GPTMovieSuggestions/>
     </div>
   )
 }
