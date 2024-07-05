@@ -1,28 +1,28 @@
 const lang= {
     en:{
-        Search: 'Search',
+        search: 'Search',
         getSearchPlaceholder: "Today What would you like to watch"
     },
     hindi:{
-        Search: 'खोज',
+        search: 'खोज',
         getSearchPlaceholder:"आज आप क्या देखना चाहेंगे"
     },
     kannada:{
-        Search: 'ಹುಡುಕಿ',
+        search: 'ಹುಡುಕಿ',
         getSearchPlaceholder:"ಇಂದು ನೀವು ಏನನ್ನು ವೀಕ್ಷಿಸಲು ಬಯಸುತ್ತೀರಿ"
     },
 
     telugu:{
-        Search: 'వెతకండి',
+        search: 'వెతకండి',
         getSearchPlaceholder:"ఈరోజు మీరు ఏమి చూడాలనుకుంటున్నారు"
     },
 
     tamil:{
-        Search: 'தேடு',
+        search: 'தேடு',
         getSearchPlaceholder:"இன்று நீங்கள் எதைப் பார்க்க விரும்புகிறீர்கள்"
     },
     spanish:{
-        Search: 'buscar',
+        search: 'buscar',
         getSearchPlaceholder:"Hoy ¿Qué te gustaría ver?"
     },
 
