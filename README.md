@@ -16,6 +16,11 @@
   add hardcoded values to constants file
   comopleted the mainconatiner and secondry container 
   fetched popular movies from tmdb
+  gpt search page
+  gpt searchBar
+  multi-language feature in our app
+  
+
 
 # Mytube-Gpt Features
 
