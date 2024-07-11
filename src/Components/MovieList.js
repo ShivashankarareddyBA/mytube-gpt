@@ -5,7 +5,7 @@ const MovieList = ({ title, movies }) => {
   if (!movies) return;
   return (
     <div className="px-1 bg-black w-screen">
-      <h1 className="text-white py-1">{title}</h1>
+      <h1 className="text-lg md:text-3xl text-white py-1">{title}</h1>
 
       <div className="flex overflow-x-scroll ">
         <div className="flex"> 

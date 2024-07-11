@@ -54,10 +54,10 @@ const Header = () => {
   };
 
   return (
-    <div className=" flex justify-between absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10">
-      <img className="w-40 h-10" src={logo} alt="logo" />
+    <div className=" flex flex-col md:flex-row justify-between absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10">
+      <img className="w-40 h-10 mx-auto md:mx-0" src={logo} alt="logo" />
       {user && (
-        <div className="flex p-2">
+        <div className="flex p-2 justify-between">
           {showGptSearch && (
             <select
               className="rounded-lg px-2 mt-3 w-25 h-6 mr-4 bg-gray-900 text-white"
@@ -79,7 +79,7 @@ const Header = () => {
           </button>
 
           <img
-            className="w-10 h-10 rounded-full m-1"
+            className=" hidden md:block w-10 h-10 rounded-full m-1"
             src={user?.photoURL}
             alt="UserIcon"
           />
