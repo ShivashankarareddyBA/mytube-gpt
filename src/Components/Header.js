@@ -1,5 +1,5 @@
 import logo from "../img/logo.JPG";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
@@ -55,7 +55,7 @@ const Header = () => {
 
   return (
     <div className=" flex flex-col md:flex-row justify-between absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10">
-      <img className="w-40 h-10 mx-auto md:mx-0" src={logo} alt="logo" />
+      <Link to="/"><img className="w-40 h-10 mx-auto md:mx-0" src={logo} alt="logo" /></Link>
       {user && (
         <div className="flex p-2 justify-between">
           {showGptSearch && (
@@ -72,10 +72,11 @@ const Header = () => {
           )}
 
           <button
-            className="rounded-lg px-2 mt-3 w-24 h-6 mr-4 bg-purple-800 text-white"
+            className="rounded-lg px-2 mt-3 w-24 h-6 mr-4 bg-purple-800 text-white
+                md:w-22 md:h-6 md:px-4 lg:w-31 lg:h-6 lg:px-1"
             onClick={handleGptSearchClick}
           >
-            {showGptSearch ? " Home": "GPT Search"}
+            {showGptSearch ? " Home": "GPTSearch"}
           </button>
 
           <img

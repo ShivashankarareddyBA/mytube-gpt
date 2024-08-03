@@ -1,0 +1,31 @@
+import React from "react";
+
+const HomeBanner = () => {
+  return (
+    <div>
+      <div>
+        <p>Unlimited Movies, TV Shows and More</p>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <h5>Ready to watch? Enter your email or restart your membership.</h5>
+      </div>
+      <div className="flex justify-center">
+        <form>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            className="p-2 border border-gray-300 rounded"
+          />
+          <button
+            type="submit"
+            className="ml-2 p-2 bg-blue-500 text-white rounded"
+          >
+            Get Started
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default HomeBanner;

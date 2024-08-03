@@ -1,14 +1,14 @@
 export const userProfilePhoto =
   "https://pbs.twimg.com/profile_images/1729909787029078016/dBjB3Fnr_400x400.jpg";
 
-export const API_OPTIONS = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer"+ process.env.REACT_APP_TMDB,
-  },
-};
+  export const API_OPTIONS = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization: "Bearer " + process.env.REACT_APP_TMDB, // Note the space after "Bearer"
+    },
+  };
+  
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
 
